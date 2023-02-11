@@ -22,7 +22,6 @@ class Cards extends Component {
           modalTitle: elementMovie.Title,
           modalPlot: elementMovie.Plot,
           modalImg: elementMovie.Poster,
-          modalActors: elementMovie.Actors,
         });
       });
   };
@@ -61,7 +60,7 @@ class Cards extends Component {
           //     ciao
           //   </div>
           <MyModal
-            modalTitle={this.state.modalTitle}
+            modalTitle={this.props.title}
             modalPlot={this.state.modalPlot}
             modalImg={this.props.posterImg}
           />
