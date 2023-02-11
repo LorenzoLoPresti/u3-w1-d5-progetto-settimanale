@@ -13,8 +13,8 @@ class MyFooter extends Component {
   };
   render() {
     return (
-      <div class="row text-center mt-5">
-        <div class="col-6 offset-3">
+      <div className="row text-center mt-5">
+        <div className="col-6 offset-3">
           <FooterIcons />
 
           <div className="col">
@@ -27,18 +27,18 @@ class MyFooter extends Component {
               ))}
             </div>
           </div>
-          <div class="row">
-            <div class="col col-12 text-left mb-2">
+          <div className="row">
+            <div className="col col-12 text-left mb-2">
               <button
                 type="button"
-                class="btn btn-sm footer-button rounded-0 mt-3"
+                className="btn btn-sm footer-button rounded-0 mt-3"
               >
                 Service Code
               </button>
             </div>
           </div>
-          <div class="row">
-            <div class="col col-12 text-left mb-2 mt-2 copyright">
+          <div className="row">
+            <div className="col col-12 text-left mb-2 mt-2 copyright">
               © 1997-2022 Netflix, Inc.
             </div>
           </div>

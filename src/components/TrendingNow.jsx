@@ -16,11 +16,10 @@ class TrendingNow extends Component {
         }
       })
       .then((element) => {
-        console.log(element.Search);
         const sortedArr = element.Search.sort((a, b) => {
           return Number(a.Year) - Number(b.Year);
         });
-        this.setState({ ...this, cardsArr: sortedArr });
+        this.setState({ ...this.state, cardsArr: sortedArr });
       });
   };
   componentDidMount() {
@@ -37,7 +36,11 @@ class TrendingNow extends Component {
             // }
             return (
               index < 6 && (
-                <Cards key={`CardsKey ${index}`} posterImg={e.Poster} />
+                <Cards
+                  key={`CardsKey ${index}`}
+                  posterImg={e.Poster}
+                  title={e.Title}
+                />
               )
             );
           })}

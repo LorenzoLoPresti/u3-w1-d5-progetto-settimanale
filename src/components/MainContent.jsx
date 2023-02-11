@@ -12,12 +12,8 @@ class MainContent extends Component {
   };
   render() {
     return this.state.categories.map((e, index) => (
-      <div className="text-left px-4">
-        <TrendingNow
-          categoryName={e[0]}
-          key={`MovieSectionKey${index}`}
-          productQuery={e[1]}
-        />
+      <div key={`MovieSectionKey${index}`} className="text-left px-4">
+        <TrendingNow categoryName={e[0]} productQuery={e[1]} />
       </div>
     ));
   }
