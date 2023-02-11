@@ -93,10 +93,25 @@ footer {
   font-size: 0.6em;
 }
 
-.col img {
+.col .posterImg {
   transition: transform 0.2s;
+  height: 120px;
+  width: 220px;
 }
 
-.col img:hover {
+@media screen and (min-width: 1200px) {
+  .col .posterImg {
+    height: 145px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .col .posterImg {
+    height: 145px;
+    width: 100%;
+  }
+}
+
+.col .posterImg:hover {
   transform: scale(1.1);
 }
